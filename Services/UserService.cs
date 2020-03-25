@@ -23,8 +23,10 @@ namespace WebApi.Services
         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
         private List<User> _users = new List<User>
         {
-            new User { Id = 1, FirstName = "Admin", LastName = "User", Email = "admin", Password = "admin", Role = Role.Admin },
-            new User { Id = 2, FirstName = "Normal", LastName = "User", Email = "user", Password = "user", Role = Role.User } 
+            new User { Id = 1, FirstName = "Admin", LastName = "User", Email = "admin@test.com", Password = "admin", Role = Role.Admin },
+            new User { Id = 2, FirstName = "Customer", LastName = "User", Email = "customer@test.com", Password = "customer", Role = Role.Customer },
+            new User { Id = 3, FirstName = "Officer", LastName = "User", Email = "officer@test.com", Password = "officer", Role = Role.Officer },
+            new User { Id = 4, FirstName = "Normal", LastName = "User", Email = "business@test.com", Password = "business", Role = Role.Business }
         };
 
         private readonly AppSettings _appSettings;
